@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/main.css">
+  <title>Delete | User</title>
+</head>
+<body>
+  <h1>Delete User</h1>
+  <form action="/users/delete/<%= users[0]['id'] %>" method="post" class="container">
+    <h2>¿Desea eliminar el usuario?</h2>
+    <a href="/users/all"  class="green btn-cancel">Cancel</a>
+    <input type="submit" class="btn-send" value="Confirm">
+  </form>
+</body>
+</html>
