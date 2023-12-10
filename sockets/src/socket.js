@@ -15,7 +15,7 @@ module.exports = (io)=>{
     socket.on('writing',(username)=>{
       socket.broadcast.emit('writing',username); 
     });//->Con este enviamos el a todos los usuarios clientes menos al que a enviado el mensaje
-   
+    
     socket.on('message',(data)=>{ //->Aqui recibimos los datos con el message que pusimos en el emit y la data
       msg.push(data);
       /*Emitimos un evento desde el servidor hacia los clientes*/
