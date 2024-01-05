@@ -3,7 +3,7 @@ import express from "express";
 import userRouter from "./routes/user.routes.js";
 import authRouter from "./routes/auth.routes.js";
 import { PORT } from "./config/envs.js";
-import connection from "./connection.js";
+import "./connection.js";
 
 
 /*----Instancing express----*/

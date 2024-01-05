@@ -4,7 +4,6 @@ const path = require('node:path');
 const router = require('./routes/userRoutes.js');
 const connection = require('./connection.js');
 
-
 /*----Instancing express----*/
 const app = express();
 
